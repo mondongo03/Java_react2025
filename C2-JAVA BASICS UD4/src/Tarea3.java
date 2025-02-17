@@ -1,5 +1,5 @@
 
-public class Tarea6 {
+public class Tarea3 {
 
 	public static void main(String[] args) {
 		double X = 5.0;

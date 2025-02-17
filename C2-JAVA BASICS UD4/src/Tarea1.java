@@ -1,5 +1,5 @@
 
-public class Tarea4 {
+public class Tarea1 {
 
 	public static void main(String[] args) {
 		int num = 25, num2 = 30;
