@@ -6,7 +6,7 @@ public class Tarea9 {
 			}
 	int nume = 1;{
 		
-	while (nume != 101);
+	while (nume != 101) {
 	if (nume % 2 == 0);
 	nume += 1;
 	System.out.println(nume);
