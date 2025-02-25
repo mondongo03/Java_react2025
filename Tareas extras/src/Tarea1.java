@@ -10,7 +10,6 @@ public class Tarea1 {
             System.out.println("El número no es primo");
         } else {
             boolean esPrimo = true;
-    
             for (int i = 2; i < primo; i++) {
                 if (primo % i == 0) {
                     esPrimo = false;
@@ -24,7 +23,7 @@ public class Tarea1 {
                 System.out.println("El número no es primo");
             }
         }
-
         sc.close();
+       
     }
 }
