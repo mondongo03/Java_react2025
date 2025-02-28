@@ -17,24 +17,7 @@ public class Tarea3 {
 		} else {
 			System.out.println("No es primo");
 		}
-//		if (primo < 2) {
-//			
-//			esPrimo = false;
-//		} else {
-//		
-//			for (int i = 2; primo > i; i++) {
-//				if (primo % i == 0) {
-//					esPrimo = false;
-//				}
-//			}
-//		}
-//		if (esPrimo) {
-//			System.out.println("Es primo");
-//		} else {
-//			System.out.println("No es primo");
-//		}
 		
-		//Cierre de recursos
 		sc.close();
 
 	}
