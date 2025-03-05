@@ -1,23 +1,25 @@
 import java.util.Scanner;
+
 public class Tarea8 {
 
-	public static void main(String[] args) {
-		int num[] = rellenarArrays(5);
-		imprimirArrays(num);
-		
-		
-	}
-	public static void imprimirArrays(int lista[]) {
-		for (int i = 0; i<lista.length; i++) {
-			System.out.println(lista[i]);
-		}
-	}
-	public static int[] rellenarArrays(int fill) {
-		int num[] = new int[15];
-		for (int i = 0; i < num.length; i++) {
-			num[i] = fill;
-			fill++;
-		}
-		return num;
-	}
+    public static void main(String[] args) {
+        int[] numbers = new int[10]; 
+        rellenarArray(numbers); 
+        mostrarArray(numbers); 
+    }
+
+   
+    public static void rellenarArray(int[] array) {
+        Scanner sc = new Scanner(System.in); 
+        for (int i = 0; i < array.length; i++) {
+            System.out.print("Introduce un número para la posición " + i + ": ");
+            array[i] = sc.nextInt(); 
+        }
+    }
+    public static void mostrarArray(int[] array) {
+        System.out.println("\nContenido del array:");
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Índice " + i + " → Valor: " + array[i]);
+        }
+    }
 }
