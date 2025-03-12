@@ -12,7 +12,7 @@ public class Tarea4 {
     
         HashMap<String, Integer> productos = new HashMap<>();
         
-        // Inicializando algunos productos por defecto
+
         productos.put("Leche", 2);
         productos.put("Azucar", 4);
         productos.put("Bocadillo", 3);
