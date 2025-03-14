@@ -10,8 +10,7 @@ public class Tarea2 {
 
 	Tarea2(int length) {
 		this.length = length;
-		
-		
+
 	}
 
 	public String getPassword() {
