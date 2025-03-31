@@ -49,7 +49,7 @@ public class Tarea4 {
 		test.suma(1, 5);
 		test.resta(2, 1);
 		test.multi(10, 2);
-		test.potencia(5, 3);
+		
 		
 
 	    try {
