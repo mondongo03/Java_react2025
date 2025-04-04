@@ -42,7 +42,6 @@ public class Tarea6Cine {
 		Scanner sc = new Scanner(System.in);
 
 		while (count != 1) {
-			sc.nextLine();
 			System.out.println("Le gustaria comprar una entrada? [Si/No]");
 			String answers = sc.nextLine();
 
@@ -111,48 +110,46 @@ public class Tarea6Cine {
 						System.out.println("----------------------");
 
 					}
-				} else if (answer == 2) {
-					sc.nextLine();
-					System.out.println("----------------------");
-					System.out.println("Que asiento deseas reservar?");
-					String asiento = sc.nextLine();
-					System.out.println("----------------------");
+			} else if (answer == 2) {
+				sc.nextLine();
+				System.out.println("----------------------");
+				System.out.println("Que asiento deseas reservar?");
+				String asiento = sc.nextLine();
+				System.out.println("----------------------");
+			if (test.getEdad() >= test3.getEdadMin() && test.getMoney() >= test2.getPrecio()) {
+			for (int i = 0; i < tablero.length; i++) {
+				for (int j = 0; j < tablero[i].length; j++) {
+					if (tablero[i][j].equals(asiento)) {
+						if (tablero[i][j].equals("XX")) {
+							System.out.println("----------------------");
 
-					if (test.getEdad() >= test3.getEdadMin() && test.getMoney() >= test2.getPrecio()) {
-						for (int i = 0; i < tablero.length; i++) {
-							for (int j = 0; j < tablero[i].length; j++) {
-								if (tablero[i][j].equals(asiento)) {
-									if (tablero[i][j].equals("XX")) {
-										System.out.println("----------------------");
+							System.out.println("Ese asiento ya esta ocupado.");
+							
+							} else {
+							tablero[i][j] = "XX";
+							System.out.println("----------------------");
+							System.out.println("Reserva exitosa! Su asiento es: " + asiento);
 
-										System.out.println("Ese asiento ya esta ocupado.");
-									
-									} else {
-										tablero[i][j] = "XX";
-										System.out.println("----------------------");
-										System.out.println("Reserva exitosa! Su asiento es: " + asiento);
-
-										for (int x = 0; x < tablero.length; x++) {
-											for (int y = 0; y < tablero[x].length; y++) {
-												System.out.print(tablero[x][y] + " ");
-											}
-											System.out.println();
-										}
+							for (int x = 0; x < tablero.length; x++) {
+								for (int y = 0; y < tablero[x].length; y++) {
+									System.out.print(tablero[x][y] + " ");
 									}
-								}
+									System.out.println();									}
 							}
 						}
-						System.out.println("ola.");
-					} else {
-						System.out.println("No cumples los requisitos!");
 					}
-				} else if (answer == 3) {
-					System.out.println("Nos vemos," + nombre);
-					count++;
 				}
-			} else if(answers.equalsIgnoreCase("No")) {
-				System.out.println("Tenga un buen dia.");
+				System.out.println("ola.");
+				} else {
+					System.out.println("No cumples los requisitos!");
+				}
+			} else if (answer == 3) {
+				System.out.println("Nos vemos," + nombre);
 				count++;
+			}
+			} else if(answers.equalsIgnoreCase("No")) {
+			System.out.println("Tenga un buen dia.");
+			count++;
 			}
 		}
 
