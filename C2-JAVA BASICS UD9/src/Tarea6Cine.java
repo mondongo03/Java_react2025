@@ -104,7 +104,7 @@ public class Tarea6Cine {
 						System.out.println("---------------------");
 						System.out.println("Su asiento es: " + guardar[0]);
 						System.out.println("----------------------");
-
+						sc.nextLine();
 					} else {
 						System.out.println("No cumples los requisitos!");
 						System.out.println("----------------------");
