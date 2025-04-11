@@ -8,9 +8,8 @@ public class Tarea2 {
 		this.length = 8;
 	}
 
-	Tarea2(int length) {
+	Tarea2(int length) {	
 		this.length = length;
-
 	}
 
 	public String getPassword() {
