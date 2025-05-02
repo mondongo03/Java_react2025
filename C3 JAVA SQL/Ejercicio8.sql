@@ -8,3 +8,10 @@ CREATE TABLE piezas(
     nombre VARCHAR(100)
     );
 
+CREATE TABLE suministra(
+    codigoPieza INT,
+    idProveedor CHAR(4),
+    PRIMARY KEY (codigoPieza, idProveedor),
+    FOREIGN KEY (codigoPieza) REFERENCES piezas(codigo),
+    FOREIGN KEY (idProveedor) REFERENCES proveedores(id)
+);
