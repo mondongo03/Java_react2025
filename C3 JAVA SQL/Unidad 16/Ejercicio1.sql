@@ -9,12 +9,15 @@
 9. SELECT precio FROM articulos WHERE precio >= 180 ORDER BY precio ASC, nombre ASC;
 10. SELECT * FROM articulos;
 11.
-12.
+12. SELECT AVG(precio), codigoFabricante FROM articulos;
 13.
 14.
-15.
+15. SELECT MIN(precio) FROM articulos;
 16.
-17.
-18.
-19.
+17. INSERT INTO articulos (codigo, nombre, precio, codigoFabricante)
+VALUES (111, 'Altavoces', 70, 2);
+18. UPDATE articulos
+SET nombre = 'Impresora'
+WHERE codigo = 108;
+19. SELECT precio*0.90 AS precioReducido FROM articulos;
 20. SELECT precio*0.90 FROM articulos WHERE precio >= 120;
