@@ -8,7 +8,8 @@
 8. SELECT precio FROM articulos WHERE precio >= 180;
 9. SELECT precio FROM articulos WHERE precio >= 180 ORDER BY precio ASC, nombre ASC;
 10. SELECT * FROM articulos;
-11.
+11. SELECT articulos.nombre, articulos.precio, fabricantes.nombre FROM articulos
+JOIN fabricantes ON articulos.codigoFabricante = fabricantes.codigo;
 12. SELECT AVG(precio), codigoFabricante FROM articulos;
 13.
 14.
