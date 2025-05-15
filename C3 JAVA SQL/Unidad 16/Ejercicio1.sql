@@ -11,10 +11,18 @@
 11. SELECT articulos.nombre, articulos.precio, fabricantes.nombre FROM articulos
 JOIN fabricantes ON articulos.codigoFabricante = fabricantes.codigo;
 12. SELECT AVG(precio), codigoFabricante FROM articulos;
-13.
-14.
+13. SELECT AVG(precio) AS 'Precio medio', f.nombre AS 'Fabricante' FROM articulos a
+INNER JOIN fabricantes f
+ON a.fabricante = f.id_fabricante
+GROUP BY fabricante;
+14. SELECT f.nombre AS 'Fabricante', AVG(precio) AS 'Precio medio' FROM articulos a 
+INNER JOIN fabricantes f
+ON a.fabricante = f.id_fabricante
+WHERE precio >= 150
+GROUP BY fabricante;
 15. SELECT MIN(precio) FROM articulos;
-16.
+16. SELECT nombre AS 'Artículo muy caro', MAX(precio) AS 'Precio' FROM articulos
+GROUP BY fabricante;
 17. INSERT INTO articulos (codigo, nombre, precio, codigoFabricante)
 VALUES (111, 'Altavoces', 70, 2);
 18. UPDATE articulos
