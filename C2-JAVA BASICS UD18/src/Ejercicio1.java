@@ -5,9 +5,7 @@ public class Ejercicio1 {
 
 	public static void main(String[] args) {
 		try {
-			System.out.println("Aqui si?");
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			System.out.println("Aqui si?2");
 			Connection conexion=DriverManager.getConnection(
 					"jdbc:mysql://localhost:3306","root","");
 			System.out.print("Conectado a servidor correctamente");
